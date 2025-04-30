@@ -11,7 +11,7 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Contenido de este repositorio</h2></div>
 <ul dir="auto">
-<li>Enlace para la descarga de la maquina virtual (ficero .OVA)</li>
+<li>Enlace para la descarga de la maquina virtual (fichero .OVA)</li>
 <li>Fichero env.txt, donde se indican los parámetros a modificar</li>
 <li>Instrucciones</li>
 </ul>
@@ -22,20 +22,14 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Para modificar los parámetros de OpenEX: </h3></div>
 <ul dir="auto">
 <li>Accedemos como root a la maquina </li>
-<li>Modificamos el archivo .env localizado en /root (ejecutamos <code> ls -la </code> para mostrarlo)</li>
-<li>En la misma ruta que aparece el archivo docker-compose.yml, ejecutamos <code>docker compose stop</code>. (paramos el docker, pero no lo borramos)</li>
-<li>Re-arrancamos el docker con <code>docker compose up -d --force-recreate </code>. (Que solo coge las modificaciones, pero no se pierde la BD)</li>
+<li>Modificamos el archivo .env localizado en /root (ejecutando <code> ls -la </code> lo mostraremos) con las indicaciones que se muestran en el fichero env.txt de ejemplo en este repositorio</li> 
+<li>En la misma ruta que aparece el archivo docker-compose.yml, ejecutamos <code>docker compose stop</code> (Para el docker, pero no lo borra)</li>
+<li>Re-arrancamos el docker con <code>docker compose up -d --force-recreate </code> (Que solo coge las modificaciones, pero no se pierde la BD)</li>
 <li>Si en algún momento necesitamos ver los log, ejecutar <code>docker logs -f</code> o <code>docker logs -f openexhq</code></li>
 </ul>
-<br>
- 
 
-
-
-
-<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Usuarios y password</h2></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Usuarios y password</h3></div>
 <ul dir="auto">
 <li>De la máqina virtual: root / openex</li>
 <li>De la aplicación web: DIREX@acme.es / abc123</li>
-<li>Navaja Negra - Son cosas de la E.D.A.D.</li>
 </ul>
