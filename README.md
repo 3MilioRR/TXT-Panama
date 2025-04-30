@@ -2,10 +2,12 @@
 Jornadas STIC de Panamá: Instrucciones para montar la plataforma de ejercicios TTX
 
 # Antes de empezar.
-La plataforma que se ofrece, es una instancia del producto OpenEX, un software open-source desarrollado por la firma Filigran (https://filigran.io).
-OpenEX ya no existe y en su lugar, Filgran desarrolla OpenBAS, un producto más evolucionado, más potente y como su nombre indica, con capacidades de 'Breach and Attack Simulation - BAS'
-El problema es que OpenBAS requiere de unas capacidades hardware más elevadas que no le permite ejecutarse en un portatil o un ordenador de sobremesa. Además se requieren amplios conociminetos de integración de aplicaciones como MITRE-CALDERA, Red Canary, ...
-Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios con ciertas limitaciones técnicas y/o económicas
+<p>La plataforma que se ofrece, es una instancia del producto OpenEX, un software open-source desarrollado por la firma Filigran (https://filigran.io). </p>
+<p>OpenEX ya no existe y en su lugar, Filigran desarrolla OpenBAS, un producto más evolucionado, más potente y como su nombre indica, con capacidades de 'Breach and Attack Simulation - BAS'. 
+El problema es que OpenBAS requiere de unas capacidades hardware más elevadas que no le permite ejecutarse en un portatil o un ordenador de sobremesa. Además se requieren amplios conocimientos de integración de aplicaciones como MITRE-CALDERA, Red Canary, ...<br>
+Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios con ciertas limitaciones técnicas y/o económicas</p>
+
+
 
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Contenido de este repositorio</h2></div>
 <ul dir="auto">
@@ -14,7 +16,22 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 <li>Instrucciones</li>
 </ul>
 
-# Instrucciones
+# Instrucciones y configuración
+<p>Hay que entender que OpenEX es principalmente un dispatcher de notificaciones (aunque tiene más capacidades) y que es capaz de enviar correos, para lo cual, debe estar autorizado a poder conectar con una MTA (Mail Transfer Agent). Eso requiere una configuración que se explica a continuación</p>
+
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Para modificar los parámetros de OpenEX: </h3></div>
+<ul dir="auto">
+<li>Accedemos como root a la maquina </li>
+<li>Modificamos el archivo .env localizado en /root (ejecutamos <code> ls -la </code> para mostrarlo)</li>
+<li>En la misma ruta que aparece el archivo docker-compose.yml, ejecutamos <code>docker compose stop</code>. (paramos el docker, pero no lo borramos)</li>
+<li>Re-arrancamos el docker con <code>docker compose up -d --force-recreate </code>. (Que solo coge las modificaciones, pero no se pierde la BD)</li>
+<li>Si en algún momento necesitamos ver los log, ejecutar <code>docker logs -f</code> o <code>docker logs -f openexhq</code></li>
+</ul>
+<br>
+ 
+
+
+
 
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Usuarios y password</h2></div>
 <ul dir="auto">
@@ -22,22 +39,3 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 <li>De la aplicación web: DIREX@acme.es / abc123</li>
 <li>Navaja Negra - Son cosas de la E.D.A.D.</li>
 </ul>
-
-#Configuración:
-
-Accedemos como root a la maquina
-modificamos el archivo .env localizado en /root
-ejecutamos <code> ls -la </code> para mostrarlo
-editamos con <code> nano .env </code>
-
-ejecutar este comando en la misma ruta que aparece el archivo docker-compose.yml
-docker compose stop (parar maquina NO BORRAR)
-docekr compose down (parar y borrar)
-docker compose up -d (levantar las maquinas desde 0)
-
-si realizas una modificacion del archivo .env
-docker compose up -d --force-recreate (solo coge las modificaciones. No se pierde la BD)
-
-para ver los log
-docker logs -f
-docker logs -f openexhq
