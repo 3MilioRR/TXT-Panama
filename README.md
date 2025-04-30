@@ -23,6 +23,21 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 <li>Navaja Negra - Son cosas de la E.D.A.D.</li>
 </ul>
 
-<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">2021</h2></div>
-<ul dir="auto">
-<li>CCN-CERT & MCCE - Has sido tu, te crees que no te he visto.</li>
+#Configuración:
+
+Accedemos como root a la maquina
+modificamos el archivo .env localizado en /root
+ejecutamos <code> ls -la </code> para mostrarlo
+editamos con <code> nano .env </code>
+
+ejecutar este comando en la misma ruta que aparece el archivo docker-compose.yml
+docker compose stop (parar maquina NO BORRAR)
+docekr compose down (parar y borrar)
+docker compose up -d (levantar las maquinas desde 0)
+
+si realizas una modificacion del archivo .env
+docker compose up -d --force-recreate (solo coge las modificaciones. No se pierde la BD)
+
+para ver los log
+docker logs -f
+docker logs -f openexhq
