@@ -2,7 +2,7 @@
 Jornadas STIC de Panamá: Instrucciones para montar la plataforma de ejercicios TTX
 
 # Antes de empezar.
-<p>La plataforma que se ofrece, es una instancia del producto OpenEX, un software open-source desarrollado por la firma Filigran (https://filigran.io). </p>
+<p>La plataforma que se ofrece, es una instancia de OpenEX, un software open-source desarrollado por la compañía Filigran (https://filigran.io). </p>
 <p>OpenEX ya no existe y en su lugar, Filigran desarrolla OpenBAS, un producto más evolucionado, más potente y como su nombre indica, con capacidades de 'Breach and Attack Simulation - BAS'. 
 El problema es que OpenBAS requiere de unas capacidades hardware más elevadas que no le permite ejecutarse en un portatil o un ordenador de sobremesa. Además se requieren amplios conocimientos de integración de aplicaciones como MITRE-CALDERA, Red Canary, ...<br>
 Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios con ciertas limitaciones técnicas y/o económicas</p>
