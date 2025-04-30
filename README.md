@@ -15,6 +15,7 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 <li>Fichero env.txt, donde se indican los parámetros a modificar</li>
 <li>Instrucciones</li>
 </ul>
+<p>(La máquina virtual está cargada con parte de un ejercicio, donde se muestra a modo de ejemplo diferentes inyecciones que pueden aparecer en un ejerciico y la manera de mostrales) </p>
 
 # Instrucciones y configuración
 <p>Hay que entender que OpenEX es principalmente un dispatcher de notificaciones (aunque tiene más capacidades) y que es capaz de enviar correos, para lo cual, debe estar autorizado a poder conectar con una MTA (Mail Transfer Agent). Eso requiere una configuración que se explica a continuación</p>
