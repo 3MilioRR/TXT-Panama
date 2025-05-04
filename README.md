@@ -6,7 +6,7 @@ Jornadas STIC de Panamá: Instrucciones para montar la plataforma de ejercicios 
 <p>OpenEX ya no existe y en su lugar, Filigran desarrolla OpenBAS, un producto más evolucionado, más potente y como su nombre indica, con capacidades de 'Breach and Attack Simulation - BAS'. 
 El problema es que OpenBAS requiere de unas capacidades hardware más elevadas que no le permite ejecutarse en un portatil o un ordenador de sobremesa. Además se requieren amplios conocimientos de integración de aplicaciones como MITRE-CALDERA, Red Canary, ...<br>
 Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios con ciertas limitaciones técnicas y/o económicas</p>
-<p>Para aquello que quieran profundizar en el mundo de los TTX, he creado un tablero lleno de recursos. <bbr> Lo encontrarás aquí - https://start.me/p/GEYLYm/ttx  </p>
+<p>Para aquello que quieran profundizar en el mundo de los TTX, he creado un tablero lleno de recursos. <br> Lo encontrarás aquí - https://start.me/p/GEYLYm/ttx  </p>
 
 
 
