@@ -12,7 +12,7 @@ Sin embargo, OpenEX es completamente funcional y es perfecto para para usuarios 
 
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Contenido de este repositorio</h2></div>
 <ul dir="auto">
-<li>Enlace para la descarga de la maquina virtual (fichero .OVA)</li>
+<li>Enlace para la descarga de la maquina virtual (fichero .OVA): https://trc.es/v-jornadas-stic-congreso-rootedcon-capitulo-panama</li>
 <li>Fichero env.txt, donde se indican los parámetros a modificar</li>
 <li>Instrucciones</li>
 </ul>
