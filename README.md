@@ -1,5 +1,7 @@
 # TXT-Panama
-Jornadas STIC de Panamá: Instrucciones para montar la plataforma de ejercicios TTX
+<p>Jornadas STIC de Panamá: Instrucciones para montar la plataforma de ejercicios TTX.</p>
+<p>Enlace al video de la ponencia: https://youtu.be/2iLBWgCZPCQ?feature=shared</p>
+
 
 # Antes de empezar.
 <p>La plataforma que se ofrece, es una instancia de OpenEX, un software open-source desarrollado por la compañía Filigran (https://filigran.io). </p>
